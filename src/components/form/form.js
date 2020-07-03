@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactView from 'react-json-view';
-
 import './form.scss';
 
 class Form extends React.Component {
@@ -23,6 +22,7 @@ class Form extends React.Component {
           try {
             let raw = await fetch(this.state.url);
             let data = await raw.json();
+
 
             let head;
             raw.headers.forEach(value => {
@@ -51,7 +51,7 @@ class Form extends React.Component {
               body: this.state.body
             })
               .then(data => data.json()).then(results => {
-                this.props.handler(results);
+               this.props.handler(results);
             this.props.setHistory(this.state.method,this.state.url,this.state.body);
 
               })
@@ -93,6 +93,8 @@ class Form extends React.Component {
     this.setState({ body });
   }
 
+
+
   render() {
     return (
       <>
@@ -108,7 +110,7 @@ class Form extends React.Component {
             <span className={this.state.method === 'put' ? 'active' : ''} id="put" onClick={this.handleChangeMethod}>PUT</span>
             <span className={this.state.method === 'delete' ? 'active' : ''} id="delete" onClick={this.handleChangeMethod}>DELETE</span>
           </label>
-          <label> Body :
+          <label> Body:
           <textarea className="body" onChange={this.handleBody} > </textarea></label>
         </form>
       </>
