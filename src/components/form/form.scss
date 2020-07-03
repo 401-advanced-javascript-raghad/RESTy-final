@@ -1,0 +1,52 @@
+$backgroundColor: #efefef;
+$radius: 40%;
+
+form {
+        display: inline-block;
+        width: 200px;
+        margin-left: 37%;
+        margin-top: 1%;
+
+  label {
+    display: flex;
+    margin: 1rem 0;
+
+    &.methods {
+      span {
+        cursor: pointer;
+        margin-right: 1rem;
+        padding: .25rem .5rem;
+        background: #ccc;
+
+        &:hover, &.active {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+.results {
+  background: #efefef;
+  border: 1px solid #ccc;
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+  height: 320px;
+
+
+  span {
+    margin: 1rem;
+  }
+}
+.object-key-val {
+  background-color: #8fbca6;
+  min-height: 270px;
+  margin: 3%;
+}
+label.methods {
+  margin-left: 28%;
+}
+.object-content {
+  background-color: #b2d4c3;
+}

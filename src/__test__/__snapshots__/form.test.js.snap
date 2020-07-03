@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form/> renders correctly 1`] = `
+<main
+  className="main-class"
+>
+  <div
+    className="url"
+  >
+    <label>
+      URL:
+    </label>
+    <input
+      onChange={[Function]}
+      type="text"
+    />
+    <button
+      onClick={[Function]}
+    >
+      GO!
+    </button>
+    <br />
+  </div>
+  <div
+    className="method"
+  >
+    <input
+      id="get"
+      name="method"
+      onChange={[Function]}
+      type="radio"
+      value="get"
+    />
+    <label>
+      GET
+    </label>
+    <input
+      id="post"
+      name="method"
+      onChange={[Function]}
+      type="radio"
+      value="post"
+    />
+    <label>
+      POST
+    </label>
+    <input
+      id="put"
+      name="method"
+      onChange={[Function]}
+      type="radio"
+      value="put"
+    />
+    <label>
+      PUT
+    </label>
+    <input
+      id="delete"
+      name="method"
+      onChange={[Function]}
+      type="radio"
+      value="delete"
+    />
+    <label>
+      DELETE
+    </label>
+  </div>
+  <div
+    className="result"
+  >
+    
+     
+    
+  </div>
+</main>
+`;
